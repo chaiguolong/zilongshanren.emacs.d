@@ -216,7 +216,9 @@
 (use-package sudo-edit
   :ensure t)
 
-(when (or sys/mac-x-p sys/linux-x-p (daemonp))
+;;(when (or sys/mac-x-p sys/linux-x-p (daemonp))
+;;我喜欢用vterm,所以改了
+(when (or sys/macp sys/linuxp (daemonp))
   (use-package  vterm
     :ensure t
     )

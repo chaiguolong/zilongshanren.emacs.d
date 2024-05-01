@@ -47,7 +47,7 @@
 
   ;; 无论什么终端显示,我都使用doom-gruvbox主题,因为我喜欢
   (load-theme 'doom-gruvbox)
-)
+  )
 
 
 (set-face-attribute 'default nil :height 150)
