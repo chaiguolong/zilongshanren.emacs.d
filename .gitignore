@@ -1,5 +1,6 @@
 auto-save-list
 .cask
+.DS_Store
 elpa
 anaconda-mode
 company-statistics-cache.el

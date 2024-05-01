@@ -189,8 +189,8 @@
         line-number-mode nil
         ;; kill-whole-line t               ; Kill line including '\n'
         line-move-visual nil
-        track-eol t                     ; Keep cursor at end of lines. Require line-move-visual is nil.
-        set-mark-command-repeat-pop t)  ; Repeating C-SPC after popping mark pops it again
+        track-eol t ; Keep cursor at end of lines. Require line-move-visual is nil.
+        set-mark-command-repeat-pop t) ; Repeating C-SPC after popping mark pops it again
 
   ;; Visualize TAB, (HARD) SPACE, NEWLINE
   (setq-default show-trailing-whitespace nil) ; Don't show trailing whitespace by default
@@ -198,6 +198,11 @@
     "Show trailing spaces and delete on saving."
     (setq show-trailing-whitespace t)
     (add-hook 'before-save-hook #'delete-trailing-whitespace nil t))
+
+  ;; 不显示菜单
+  (menu-bar-mode 0)
+  ;; 显示行号
+  (global-display-line-numbers-mode t)
 
   ;; Prettify the process list
   )
