@@ -247,7 +247,8 @@
      (window-parameters (mode-line-format . none))
      (window-height . fit-window-to-buffer)))
 
-  (define-key minibuffer-local-map (kbd "C-;") 'embark-act)
+  ;; C-;iterm2终端无法传进来,先用C-c C-h
+  (define-key minibuffer-local-map (kbd "C-c C-h") 'embark-act)
   (define-key minibuffer-local-map (kbd "C-c C-;") 'embark-export)
   (define-key minibuffer-local-map (kbd "C-c C-e") '+vertico/embark-export-write)
 
