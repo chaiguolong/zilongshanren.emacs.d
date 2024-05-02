@@ -41,12 +41,12 @@
 (use-package doom-themes
   :ensure t
   :init
-  ;; (if (display-graphic-p)
-  ;;     (load-theme 'doom-solarized-light)
-  ;;   (load-theme 'doom-tomorrow-night))
+  (if (display-graphic-p)
+      (load-theme 'doom-solarized-light)
+    (load-theme 'doom-tomorrow-night))
 
   ;; 无论什么终端显示,我都使用doom-gruvbox主题,因为我喜欢
-  (load-theme 'doom-gruvbox)
+  ;; (load-theme 'doom-gruvbox)
   )
 
 
