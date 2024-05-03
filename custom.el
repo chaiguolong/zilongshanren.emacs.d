@@ -21,6 +21,8 @@
  '(jdee-db-requested-breakpoint-face-colors (cons "#1B2229" "#98be65"))
  '(jdee-db-spec-breakpoint-face-colors (cons "#1B2229" "#3f444a"))
  '(objed-cursor-color "#ff6c6b")
+ '(org-agenda-files
+   '("/home/dream/org-notes/gtd.org" "/home/dream/org-notes/all-posts.org" "/home/dream/org-notes/work.org" "/home/dream/org-notes/notes.org"))
  '(package-selected-packages
    '(gcmh company hungry-delete swiper counsel smartparens lispy lispyville magit js2-mode consult nodejs-repl exec-path-from-shell citre monokai-theme popwin org-pomodoro yasnippet evil vertico consult-projectile evil-leader window-numbering evil-surround evil-nerd-commenter which-key js2-refactor lsp-mode eglot json-mode flycheck))
  '(pdf-view-midnight-colors (cons "#bbc2cf" "#282c34"))

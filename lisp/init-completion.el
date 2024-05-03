@@ -247,7 +247,8 @@
      (window-parameters (mode-line-format . none))
      (window-height . fit-window-to-buffer)))
 
-  (define-key minibuffer-local-map (kbd "C-;") 'embark-act)
+  ;; 快捷键c-;iterm2无法传入,先用C-c C-a
+  (define-key minibuffer-local-map (kbd "C-c C-a") 'embark-act)
   (define-key minibuffer-local-map (kbd "C-c C-;") 'embark-export)
   (define-key minibuffer-local-map (kbd "C-c C-e") '+vertico/embark-export-write)
 
@@ -257,7 +258,7 @@
       (push '(grep-mode :position right :width 100) popwin:special-display-config)
       (push '(special-mode :position right :width 100) popwin:special-display-config)))
 
-  (global-set-key (kbd "C-;") 'embark-act)
+  (global-set-key (kbd "C-c C-a") 'embark-act)
 
   :config
   (define-key minibuffer-local-map (kbd "C-'") #'embark-become)
